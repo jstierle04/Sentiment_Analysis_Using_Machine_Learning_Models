@@ -12,19 +12,19 @@ airline = pd.read_csv('Tweets.csv')
 
 import numpy as np
 
-#check number of rows/columns
-"""print(airline.shape, "\n")
+# check number of rows/columns
+print(airline.shape, "\n")
 
-#check column data types
+# check column data types
 print(airline.dtypes, "\n")
 
-#check number of duplicated rows
+# check number of duplicated rows
 print(airline[airline.duplicated()], "\n")
 
-#descriptive statistics
+# descriptive statistics
 print(airline.describe(), "\n")
 
-#percentage of missing values in each column
+# percentage of missing values in each column
 print(round(airline.isna().sum() / len(airline) * 100, 1), "\n")
 
 # EDA profile
@@ -61,7 +61,7 @@ sns.countplot(x = 'airline', data = airline, order = airline['airline'].value_co
 plt.xlabel('Airline')
 plt.ylabel('Frequency')
 plt.title('Frequency of Airlines Appearing in Tweets')
-plt.show()"""
+plt.show()
 
 # count missing values
 print(airline.loc[:].isnull().sum(), "\n")
